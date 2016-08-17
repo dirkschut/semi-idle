@@ -15,7 +15,10 @@ public class InterfaceManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		player.coins++;
 		coinsAmount.text = "Coins: " + player.coins;
+	}
+
+	public void IncreaseCoins(){
+		player.coins++;
 	}
 }
